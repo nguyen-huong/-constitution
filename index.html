@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" event="width=device-width, initial-scale=1.0">
+<style>
+   * {
+      box-sizing: border-box;
+   }
+   body {
+      background-color: #9037f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+   }
+   h2{
+      text-align: center;
+   }
+   .timeline {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+   }
+   .timeline::after {
+      content: " ";
+      position: absolute;
+      width: 6px;
+      background-color: rgb(253, 203, 255);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+   }
+   /* eventsContainer around event */
+   .eventsContainer {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+   }
+   .eventsContainer::after {
+      content: " ";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: rgb(219, 255, 12);
+      border: 4px dashed rgb(255, 0, 0);
+      background-clip: content-box;
+      top: 15px;
+      z-index: 1;
+   }
+   .displayLeft {
+      left: 0;
+   }
+   .displayRight {
+      left: 50%;
+   }
+   .displayLeft::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      right: 30px;
+      border: medium solid rgb(225, 246, 255);
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent white;
+   }
+   .displayRight::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: 30px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+   }
+   .displayRight::after {
+      left: -16px;
+   }
+   .event {
+      padding: 20px 30px;
+      background-color: white;
+      position: relative;
+      border-radius: 6px;
+   }
+   @media screen and (max-width: 600px) {
+      .timeline::after {
+         left: 31px;
+      }
+      .eventsContainer {
+         width: 100%;
+         padding-left: 70px;
+         padding-right: 25px;
+      }
+      .eventsContainer::before {
+         left: 60px;
+         border: medium solid white;
+         border-width: 10px 10px 10px 0;
+         border-color: transparent white transparent transparent;
+      }
+      .displayLeft::after, .displayRight::after {
+         left: 15px;
+      }
+      .displayRight {
+         left: 0%;
+      }
+   }
+</style>
