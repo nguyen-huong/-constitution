@@ -1,111 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" event="width=device-width, initial-scale=1.0">
-<style>
-   * {
-      box-sizing: border-box;
-   }
-   body {
-      background-color: #9037f5;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-   }
-   h2{
-      text-align: center;
-   }
-   .timeline {
-      position: relative;
-      max-width: 1200px;
-      margin: 0 auto;
-   }
-   .timeline::after {
-      content: " ";
-      position: absolute;
-      width: 6px;
-      background-color: rgb(253, 203, 255);
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      margin-left: -3px;
-   }
-   /* eventsContainer around event */
-   .eventsContainer {
-      padding: 10px 40px;
-      position: relative;
-      background-color: inherit;
-      width: 50%;
-   }
-   .eventsContainer::after {
-      content: " ";
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      right: -17px;
-      background-color: rgb(219, 255, 12);
-      border: 4px dashed rgb(255, 0, 0);
-      background-clip: content-box;
-      top: 15px;
-      z-index: 1;
-   }
-   .displayLeft {
-      left: 0;
-   }
-   .displayRight {
-      left: 50%;
-   }
-   .displayLeft::before {
-      content: " ";
-      height: 0;
-      position: absolute;
-      top: 22px;
-      width: 0;
-      z-index: 1;
-      right: 30px;
-      border: medium solid rgb(225, 246, 255);
-      border-width: 10px 0 10px 10px;
-      border-color: transparent transparent transparent white;
-   }
-   .displayRight::before {
-      content: " ";
-      height: 0;
-      position: absolute;
-      top: 22px;
-      width: 0;
-      z-index: 1;
-      left: 30px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-   }
-   .displayRight::after {
-      left: -16px;
-   }
-   .event {
-      padding: 20px 30px;
-      background-color: white;
-      position: relative;
-      border-radius: 6px;
-   }
-   @media screen and (max-width: 600px) {
-      .timeline::after {
-         left: 31px;
-      }
-      .eventsContainer {
-         width: 100%;
-         padding-left: 70px;
-         padding-right: 25px;
-      }
-      .eventsContainer::before {
-         left: 60px;
-         border: medium solid white;
-         border-width: 10px 10px 10px 0;
-         border-color: transparent white transparent transparent;
-      }
-      .displayLeft::after, .displayRight::after {
-         left: 15px;
-      }
-      .displayRight {
-         left: 0%;
-      }
-   }
-</style>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Constitution</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <center><h1>Timeline of US Constitution</h1></center>
+    <center><h3>An ideology comprised and founded by underdogs<h3></center>
+    <br>
+    <center><details>
+ <summary>1775-1776</summary>
+  <p>War time!!! The chaos of monarchy and oppression caused the Thirteen Colonies to revolt against Britain. Declaration of Independence written and approved.</p>
+</details></center>
+<br>
+<center><details>
+<summary>1781-1783</summary>
+  <p>Revolutionary War ends, and the Thirteen Colonies won. The Continental Congress agrees on the Articles of Confederation. It is then replaced by the Congress of the Confederation, which serves as the cornerstone to the new US government. Britain recognizes the independence through the Treaty of Paris.</p>
+</details></center>
+<br>
+<center><details><summary>1787-1789</summary>
+  <p>The US Constitution is written at the Constitutional Convention in 1781. The ratification proceeds by 9 states in 1788 and becomes the supreme law of the USA
+When George Washington got elected as the first president,
+the first Congress.</p>
+</details></center>
+<br>
+<center><details><summary>1790-1791</summary>
+  <p>The First Supreme Court is assembled in NY until the US capital moves to Philadelphia
+The first 10 amendments in the Bill of Rights are added</p>
+</details></center>
+<br>
+<center><details><summary>1800-1802</summary>
+  <p>The US capital moves to Washington. Under Chief Marshall's judgement, Marbury v. Madison is the first time that the court found that a law was unconstitutional</p>
+</details></center>
+<br>
+<center><details><summary>1861-1863</summary>
+  <p>Civil War begun and ended on 1865.
+Amendment 13: abolishes slavery.
+Abraham Lincoln is assassinated</p>
+</details></center>
+<br>
+<center><details><summary>1868-1870</summary>
+  <p>Amendment 14: Rights of citizenship to all people born in USA or naturalized
+1870	Amendment 15: Voting rights to all citizens, regardless of color or race, but women are not mentioned.</p>
+</details></center>
+<br>
+<center><details><summary>1913-1920</summary>
+  <p>Amendment 16: Income tax
+1920	Amendment 19: Women's suffrage</p>
+</details></center>
+<br>
+<center><details><summary>1971-1992</summary>
+  <p>Amendment 26: Voting age at 18
+1992	Amendment 27: Increasing Congressional pay</p>
+</details></center>
+<br>
+    <script src="script.js"></script>
+  </body>
+</html>
